@@ -20,7 +20,7 @@ const App = () => {
         <Stack.Screen 
           name="DangKy" 
           component={DangKy} 
-          options={{ headerShown: false }} // You can set headerShown to true if you want to show the header
+          options={{ headerShown: false }} // You can set headerShown to true if you want to show the header.
         />
         <Stack.Screen 
           name="DangNhap" 
