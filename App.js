@@ -9,13 +9,14 @@ import TimKiemBanDuLich from './screens/TimKiemBanDuLich';
 import ThongTinCaNhan from './screens/ThongTinCaNhan';
 import TimKiem from './screens/TimKiem';
 import Blog from './screens/Blog';
+import ThongBao from './screens/ThongBao';
 
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Blog">
+      <Stack.Navigator initialRouteName="ThongBao">
         <Stack.Screen name="QuenMatKhau" component={QuenMatKhauScreen} options={{  headerShown: false }} />
         <Stack.Screen 
           name="DangKy" 
@@ -50,6 +51,11 @@ const App = () => {
         <Stack.Screen 
           name="Blog" 
           component={Blog} 
+          options={{ headerShown: false }} // You can set headerShown to true if you want to show the header
+        />
+         <Stack.Screen 
+          name="ThongBao" 
+          component={ThongBao} 
           options={{ headerShown: false }} // You can set headerShown to true if you want to show the header
         />
       </Stack.Navigator>
